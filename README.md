@@ -1,5 +1,5 @@
 # 📝🎬 WriteScreener
-
+[![Build Status](https://travis-ci.com/AlexisSonolet/WriteScreener.svg?branch=master)](https://travis-ci.com/AlexisSonolet/WriteScreener)
 ## A propos
 
 ⚠️ Le logiciel est en construction, pas de version utilisable pour le moment ⚠️

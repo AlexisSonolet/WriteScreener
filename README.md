@@ -2,7 +2,7 @@
 
 ## A propos
 
-⚠️ Le logiciel est en construction, il n'y a pas de version utilisable pour le moment
+⚠️ Le logiciel est en construction, pas de version utilisable pour le moment ⚠️
 
 WriteScreener est un logiciel d'écriture de scénarios de manière collaborative.
 

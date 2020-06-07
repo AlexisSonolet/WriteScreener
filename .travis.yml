@@ -16,4 +16,4 @@ before_script:
 script: 
   - qmake -qt=qt5
   - make
-  - timeout -s 1 10s ./WriteScreener
+  - timeout -s SIGTERM -k 10 ./WriteScreener

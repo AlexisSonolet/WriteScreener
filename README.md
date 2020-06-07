@@ -1,5 +1,9 @@
 # 📝🎬 WriteScreener
-[![Build Status](https://travis-ci.com/AlexisSonolet/WriteScreener.svg?branch=master)](https://travis-ci.com/AlexisSonolet/WriteScreener)
+
+[![Release](https://img.shields.io/badge/Release-0.0-yellow.svg)](https://shields.io/) &ensp;&ensp;&ensp;
+[![Generic badge](https://img.shields.io/badge/Linux_:-blue.svg)](https://shields.io/) [![Linux Build Status](https://travis-ci.com/AlexisSonolet/WriteScreener.svg?branch=master)](https://travis-ci.com/AlexisSonolet/WriteScreener) &ensp;
+[![Generic badge](https://img.shields.io/badge/Windows_:-blue.svg)](https://shields.io/) [![Windows Build Status](https://img.shields.io/badge/build-passing-vert.svg)](https://shields.io/)
+
 ## A propos
 
 ⚠️ Le logiciel est en construction, pas de version utilisable pour le moment ⚠️

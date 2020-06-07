@@ -1,8 +1,8 @@
 # 📝🎬 WriteScreener
 
 [![Release](https://img.shields.io/badge/Release-0.0-yellow.svg)](https://shields.io/) &ensp;&ensp;&ensp;
-[![Generic badge](https://img.shields.io/badge/Linux_:-blue.svg)](https://shields.io/) [![Linux Build Status](https://travis-ci.com/AlexisSonolet/WriteScreener.svg?branch=master)](https://travis-ci.com/AlexisSonolet/WriteScreener) &ensp;
-[![Generic badge](https://img.shields.io/badge/Windows_:-blue.svg)](https://shields.io/) [![Windows Build Status](https://img.shields.io/badge/build-passing-vert.svg)](https://shields.io/)
+[![Generic badge](https://img.shields.io/badge/Linux-blue.svg)](https://shields.io/) [![Linux Build Status](https://travis-ci.com/AlexisSonolet/WriteScreener.svg?branch=master)](https://travis-ci.com/AlexisSonolet/WriteScreener) &ensp;
+[![Generic badge](https://img.shields.io/badge/Windows-blue.svg)](https://shields.io/) [![Windows Build Status](https://img.shields.io/badge/build-passing-vert.svg)](https://shields.io/)
 
 ## A propos
 
@@ -23,7 +23,7 @@ Le logiciel est écrit en C++ et est basé sur Qt.
 Pour l'exécuter :
 - suivre ces documents : 
 
-https://wiki.qt.io/Build_Standalone_Qt_Application_for_Windows
+https://wiki.qt.io/Build_Standalone_Qt_Application_for_Windows \
 https://wiki.qt.io/Deploy_an_Application_on_Windows/fr
 - Le plus simple :
     - lancer QtCreator et compiler le programme

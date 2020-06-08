@@ -9,7 +9,8 @@
 [![Generic badge](https://img.shields.io/badge/Linux-blue.svg)](https://shields.io/) [![Linux Build Status](https://travis-ci.com/AlexisSonolet/WriteScreener.svg?branch=master)](https://travis-ci.com/AlexisSonolet/WriteScreener) &ensp;
 [![Generic badge](https://img.shields.io/badge/Windows-blue.svg)](https://shields.io/) [![Windows Build Status](https://img.shields.io/badge/build-passing-vert.svg)](https://shields.io/)
 
-![preview](ressources/images/examples/Capture_1.PNG)
+
+<div style="text-align:center"><img src="ressources/images/examples/Capture_1.PNG" /></div>
 
 ## A propos
 

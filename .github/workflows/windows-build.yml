@@ -1,0 +1,29 @@
+name: Windows build
+
+on: push
+
+jobs:
+  build:
+    runs-on: 	windows-latest
+    steps:
+      - name: Install Qt on Windows
+        uses: jurplel/install-qt-action@v2
+        with:
+          version: '5.12.8'
+          host: 'windows'
+          target: 'desktop'
+          arch: 'win64_msvc2017_64'
+          dir: '${{ github.workspace }}/example/windows/'
+          install-deps: 'true'
+          modules: 'qtcharts qtwebengine'
+          # mirror: 'http://mirrors.ocf.berkeley.edu/qt/'
+          cached: 'false'
+          aqtversion: '==0.8'
+          py7zrversion: '==0.6'
+          # extra: '--external 7z'
+      - name: chackout
+        uses: actions/checkout@v2
+      - name: compile-project
+        run: qmake WriteScreener.pro
+      - name: make
+        run: mingw32-make

@@ -24,7 +24,7 @@ jobs:
       - name: checkout
         uses: actions/checkout@v2
       - name: set-path
-        run: set PATH=C:\Qt\5.12.8\bin
+        run: set PATH=${{ github.workspace }}/example/windows/Qt/5.12.8/bin
       - name: compile-project
         run: qmake WriteScreener.pro
       - name: make

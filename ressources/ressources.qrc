@@ -1,0 +1,27 @@
+<RCC>
+    <qresource prefix="/images">
+        <file>images/icons2/007-writing.png</file>
+        <file>images/icons2/040-newspaper.png</file>
+        <file>images/icons2/045-fax.png</file>
+        <file>images/icons2/047-floppy disk.png</file>
+        <file>images/new icon/icons8-bookmark-48.png</file>
+        <file>images/new icon/icons8-delete-48.png</file>
+        <file>images/new icon/icons8-download-from-the-cloud-48.png</file>
+        <file>images/new icon/icons8-edit-48.png</file>
+        <file>images/new icon/icons8-folder-48 (1).png</file>
+        <file>images/new icon/icons8-folder-48 (2).png</file>
+        <file>images/new icon/icons8-folder-48.png</file>
+        <file>images/new icon/icons8-opened-folder-48.png</file>
+        <file>images/new icon/icons8-picture-48.png</file>
+        <file>images/new icon/icons8-refresh-48.png</file>
+        <file>images/new icon/icons8-remove-48.png</file>
+        <file>images/new icon/icons8-restart-48.png</file>
+        <file>images/new icon/icons8-upload-to-the-cloud-48.png</file>
+        <file>images/new icon/icons8-print-48.png</file>
+        <file>images/new icon/icons8-copy-48.png</file>
+        <file>images/new icon/icons8-paste-48.png</file>
+        <file>images/new icon/icons8-cut-48.png</file>
+        <file>images/new icon/icons8-redo-48.png</file>
+        <file>images/new icon/icons8-undo-48.png</file>
+    </qresource>
+</RCC>

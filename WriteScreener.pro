@@ -1,4 +1,4 @@
-QT       += core gui
+QT       += core gui printsupport
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
@@ -16,14 +16,17 @@ DEFINES += QT_DEPRECATED_WARNINGS
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
-    main.cpp \
+    src/mainwindow.cpp \
+    src/main.cpp \
     src/openproject.cpp
 
 HEADERS += \
-    headers/openproject.h
+    headers/openproject.h \
+    headers/mainwindow.h
 
 FORMS += \
-    openproject.ui
+    forms/openproject.ui \
+    forms/mainwindow.ui
 
 TRANSLATIONS += \
     WriteScreener_fr_FR.ts
@@ -32,3 +35,6 @@ TRANSLATIONS += \
 qnx: target.path = /tmp/$${TARGET}/bin
 else: unix:!android: target.path = /opt/$${TARGET}/bin
 !isEmpty(target.path): INSTALLS += target
+
+RESOURCES += \
+    ressources/ressources.qrc

@@ -1,6 +1,6 @@
 # 📝🎬 WriteScreener
 
-[![Release](https://img.shields.io/badge/Release-0.0-yellow.svg)](https://shields.io/) &ensp;&ensp;&ensp;
+[![Release](https://img.shields.io/badge/Release-0.0-yellow.svg)](https://shields.io/) \
 [![Generic badge](https://img.shields.io/badge/Linux-blue.svg)](https://shields.io/) [![Linux Build Status](https://travis-ci.com/AlexisSonolet/WriteScreener.svg?branch=master)](https://travis-ci.com/AlexisSonolet/WriteScreener) &ensp;
 [![Generic badge](https://img.shields.io/badge/Windows-blue.svg)](https://shields.io/) [![Windows Build Status](https://img.shields.io/badge/build-passing-vert.svg)](https://shields.io/)
 

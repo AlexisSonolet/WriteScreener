@@ -94,3 +94,20 @@ void MainWindow::on_actionRedo_triggered()
 {
     ui->textEdit->redo();
 }
+
+void MainWindow::on_actionPolice_triggered()
+{
+    bool selected;
+    QFont font = QFontDialog::getFont(&selected, this);
+    if (selected) {
+        // A font is selected
+        QTextCursor cursor = ui->textEdit->textCursor();
+        QTextCharFormat formatChar = cursor.charFormat();
+        formatChar.setFont(font);
+        cursor.setCharFormat(formatChar);
+    }
+
+    /* TO UPPER : useful for scene/speaker
+    cursor.insertText(cursor.selectedText().toUpper());
+    */
+}

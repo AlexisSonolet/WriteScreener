@@ -2,6 +2,7 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
+#include <QWidget>
 
 #include <QFile>
 #include <QFileDialog>
@@ -9,6 +10,11 @@
 #include <QMessageBox>
 #include <QPrinter>
 #include <QPrintDialog>
+#include <QFontDialog>
+#include <QTextDocument>
+#include <QTextBlock>
+#include <QTextCursor>
+
 
 namespace Ui {
 class MainWindow;
@@ -42,6 +48,8 @@ private slots:
     void on_actionUndo_triggered();
 
     void on_actionRedo_triggered();
+
+    void on_actionPolice_triggered();
 
 private:
     Ui::MainWindow *ui;

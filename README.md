@@ -9,6 +9,8 @@
 [![Generic badge](https://img.shields.io/badge/Linux-blue.svg)](https://shields.io/) [![Linux Build Status](https://travis-ci.com/AlexisSonolet/WriteScreener.svg?branch=master)](https://travis-ci.com/AlexisSonolet/WriteScreener) &ensp;
 [![Generic badge](https://img.shields.io/badge/Windows-blue.svg)](https://shields.io/) [![Windows Build Status](https://img.shields.io/badge/build-passing-vert.svg)](https://shields.io/)
 
+![preview](ressources/images/examples/Capture_1.PNG)
+
 ## A propos
 
 ⚠️ Le logiciel est en construction, pas de version utilisable pour le moment ⚠️
@@ -20,6 +22,7 @@ Le programme étant modulaire, il sera possible d'implémenter l'utilisation de 
 Pour le moment deux clouds sont envisagés :
 - Github
 - Google Drive
+
 ___
 ## Compilation
 

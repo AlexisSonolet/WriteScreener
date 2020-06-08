@@ -106,8 +106,36 @@ void MainWindow::on_actionPolice_triggered()
         formatChar.setFont(font);
         cursor.setCharFormat(formatChar);
     }
+}
 
-    /* TO UPPER : useful for scene/speaker
+void MainWindow::on_actionactionAlignCenter_triggered()
+{
+    ui->textEdit->setAlignment(Qt::AlignCenter);
+}
+
+void MainWindow::on_actionactionAlignLeft_triggered()
+{
+    ui->textEdit->setAlignment(Qt::AlignLeft);
+}
+
+void MainWindow::on_actionactionAlignRight_triggered()
+{
+    ui->textEdit->setAlignment(Qt::AlignRight);
+}
+
+void MainWindow::on_actionactionAlignJustify_triggered()
+{
+    ui->textEdit->setAlignment(Qt::AlignJustify);
+}
+
+void MainWindow::on_actionactionUppercase_triggered()
+{
+    QTextCursor cursor = ui->textEdit->textCursor();
     cursor.insertText(cursor.selectedText().toUpper());
-    */
+}
+
+void MainWindow::on_actionactionLowercase_triggered()
+{
+    QTextCursor cursor = ui->textEdit->textCursor();
+    cursor.insertText(cursor.selectedText().toLower());
 }

@@ -14,8 +14,6 @@
         <file>images/new icon/icons8-opened-folder-48.png</file>
         <file>images/new icon/icons8-picture-48.png</file>
         <file>images/new icon/icons8-refresh-48.png</file>
-        <file>images/new icon/icons8-remove-48.png</file>
-        <file>images/new icon/icons8-restart-48.png</file>
         <file>images/new icon/icons8-upload-to-the-cloud-48.png</file>
         <file>images/new icon/icons8-print-48.png</file>
         <file>images/new icon/icons8-copy-48.png</file>
@@ -24,5 +22,11 @@
         <file>images/new icon/icons8-redo-48.png</file>
         <file>images/new icon/icons8-undo-48.png</file>
         <file>images/new icons 2/icons8-choose-font-30.png</file>
+        <file>images/new icons 2/icons8-align-center-24.png</file>
+        <file>images/new icons 2/icons8-align-justify-24.png</file>
+        <file>images/new icons 2/icons8-align-left-24.png</file>
+        <file>images/new icons 2/icons8-align-right-24.png</file>
+        <file>images/new icons 2/icons8-lowercase-24.png</file>
+        <file>images/new icons 2/icons8-uppercase-24.png</file>
     </qresource>
 </RCC>

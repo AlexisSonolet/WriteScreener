@@ -101,6 +101,14 @@ p, li { white-space: pre-wrap; }
    <addaction name="separator"/>
    <addaction name="actionUndo"/>
    <addaction name="actionRedo"/>
+   <addaction name="separator"/>
+   <addaction name="actionactionAlignCenter"/>
+   <addaction name="actionactionAlignJustify"/>
+   <addaction name="actionactionAlignLeft"/>
+   <addaction name="actionactionAlignRight"/>
+   <addaction name="separator"/>
+   <addaction name="actionactionUppercase"/>
+   <addaction name="actionactionLowercase"/>
   </widget>
   <action name="actionNew">
    <property name="icon">
@@ -204,6 +212,60 @@ p, li { white-space: pre-wrap; }
    </property>
    <property name="text">
     <string>Police</string>
+   </property>
+  </action>
+  <action name="actionactionAlignCenter">
+   <property name="icon">
+    <iconset resource="../ressources/ressources.qrc">
+     <normaloff>:/images/images/new icons 2/icons8-align-center-24.png</normaloff>:/images/images/new icons 2/icons8-align-center-24.png</iconset>
+   </property>
+   <property name="text">
+    <string>actionAlignCenter</string>
+   </property>
+  </action>
+  <action name="actionactionAlignLeft">
+   <property name="icon">
+    <iconset resource="../ressources/ressources.qrc">
+     <normaloff>:/images/images/new icons 2/icons8-align-left-24.png</normaloff>:/images/images/new icons 2/icons8-align-left-24.png</iconset>
+   </property>
+   <property name="text">
+    <string>actionAlignLeft</string>
+   </property>
+  </action>
+  <action name="actionactionAlignRight">
+   <property name="icon">
+    <iconset resource="../ressources/ressources.qrc">
+     <normaloff>:/images/images/new icons 2/icons8-align-right-24.png</normaloff>:/images/images/new icons 2/icons8-align-right-24.png</iconset>
+   </property>
+   <property name="text">
+    <string>actionAlignRight</string>
+   </property>
+  </action>
+  <action name="actionactionAlignJustify">
+   <property name="icon">
+    <iconset resource="../ressources/ressources.qrc">
+     <normaloff>:/images/images/new icons 2/icons8-align-justify-24.png</normaloff>:/images/images/new icons 2/icons8-align-justify-24.png</iconset>
+   </property>
+   <property name="text">
+    <string>actionAlignJustify</string>
+   </property>
+  </action>
+  <action name="actionactionUppercase">
+   <property name="icon">
+    <iconset resource="../ressources/ressources.qrc">
+     <normaloff>:/images/images/new icons 2/icons8-uppercase-24.png</normaloff>:/images/images/new icons 2/icons8-uppercase-24.png</iconset>
+   </property>
+   <property name="text">
+    <string>actionUppercase</string>
+   </property>
+  </action>
+  <action name="actionactionLowercase">
+   <property name="icon">
+    <iconset resource="../ressources/ressources.qrc">
+     <normaloff>:/images/images/new icons 2/icons8-lowercase-24.png</normaloff>:/images/images/new icons 2/icons8-lowercase-24.png</iconset>
+   </property>
+   <property name="text">
+    <string>actionLowercase</string>
    </property>
   </action>
  </widget>

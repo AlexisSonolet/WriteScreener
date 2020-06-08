@@ -51,6 +51,18 @@ private slots:
 
     void on_actionPolice_triggered();
 
+    void on_actionactionAlignCenter_triggered();
+
+    void on_actionactionAlignLeft_triggered();
+
+    void on_actionactionAlignRight_triggered();
+
+    void on_actionactionAlignJustify_triggered();
+
+    void on_actionactionUppercase_triggered();
+
+    void on_actionactionLowercase_triggered();
+
 private:
     Ui::MainWindow *ui;
     QString currentFile = "";

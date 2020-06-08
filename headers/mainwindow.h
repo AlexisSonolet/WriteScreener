@@ -14,6 +14,8 @@
 #include <QTextDocument>
 #include <QTextBlock>
 #include <QTextCursor>
+#include <QColor>
+#include <QColorDialog>
 
 
 namespace Ui {
@@ -62,6 +64,8 @@ private slots:
     void on_actionactionUppercase_triggered();
 
     void on_actionactionLowercase_triggered();
+
+    void on_actionColor_triggered();
 
 private:
     Ui::MainWindow *ui;

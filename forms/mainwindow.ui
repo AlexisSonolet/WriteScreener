@@ -73,6 +73,7 @@ p, li { white-space: pre-wrap; }
     <addaction name="actionCut"/>
     <addaction name="separator"/>
     <addaction name="actionPolice"/>
+    <addaction name="actionColor"/>
     <addaction name="separator"/>
     <addaction name="actionUndo"/>
     <addaction name="actionRedo"/>
@@ -266,6 +267,15 @@ p, li { white-space: pre-wrap; }
    </property>
    <property name="text">
     <string>actionLowercase</string>
+   </property>
+  </action>
+  <action name="actionColor">
+   <property name="icon">
+    <iconset resource="../ressources/ressources.qrc">
+     <normaloff>:/images/images/new icons 2/icons8-color-wheel-48.png</normaloff>:/images/images/new icons 2/icons8-color-wheel-48.png</iconset>
+   </property>
+   <property name="text">
+    <string>Color</string>
    </property>
   </action>
  </widget>

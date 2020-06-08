@@ -147,3 +147,9 @@ void MainWindow::on_actionactionLowercase_triggered()
     }
     cursor.insertText(cursor.selectedText().toLower());
 }
+
+void MainWindow::on_actionColor_triggered()
+{
+    QColor color = QColorDialog::getColor(Qt::black, this);
+    ui->textEdit->setTextColor(color);
+}

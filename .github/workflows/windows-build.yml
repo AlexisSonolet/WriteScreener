@@ -21,8 +21,10 @@ jobs:
           aqtversion: '==0.8'
           py7zrversion: '==0.6'
           # extra: '--external 7z'
-      - name: chackout
+      - name: checkout
         uses: actions/checkout@v2
+      - name: set-path
+        run: set PATH=C:\Qt\5.12.8\bin
       - name: compile-project
         run: qmake WriteScreener.pro
       - name: make

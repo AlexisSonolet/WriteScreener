@@ -131,11 +131,19 @@ void MainWindow::on_actionactionAlignJustify_triggered()
 void MainWindow::on_actionactionUppercase_triggered()
 {
     QTextCursor cursor = ui->textEdit->textCursor();
+    if (cursor.selectionEnd() - cursor.selectionStart() == 0) {
+        // Passer toute la ligne en majuscule
+        cursor.select(QTextCursor::LineUnderCursor);
+    }
     cursor.insertText(cursor.selectedText().toUpper());
 }
 
 void MainWindow::on_actionactionLowercase_triggered()
 {
     QTextCursor cursor = ui->textEdit->textCursor();
+    if (cursor.selectionEnd() - cursor.selectionStart() == 0) {
+        // Passer toute la ligne en majuscule
+        cursor.select(QTextCursor::LineUnderCursor);
+    }
     cursor.insertText(cursor.selectedText().toLower());
 }

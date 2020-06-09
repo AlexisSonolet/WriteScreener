@@ -10,7 +10,7 @@
 [![Generic badge](https://img.shields.io/badge/Windows-blue.svg)](https://shields.io/) [![Windows Build Status](https://img.shields.io/badge/build-passing-vert.svg)](https://shields.io/)
 
 
-<div style="text-align:center"><img src="ressources/images/examples/Capture_1.PNG" /></div>
+<div style="text-align:center"><img src="ressources/images/examples/Capture_2.PNG" /></div>
 
 ## A propos
 

@@ -16,17 +16,20 @@ DEFINES += QT_DEPRECATED_WARNINGS
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
+    src/about.cpp \
     src/mainwindow.cpp \
     src/main.cpp \
     src/openproject.cpp
 
 HEADERS += \
     headers/openproject.h \
-    headers/mainwindow.h
+    headers/mainwindow.h \
+    headers/about.h
 
 FORMS += \
     forms/openproject.ui \
-    forms/mainwindow.ui
+    forms/mainwindow.ui \
+    forms/about.ui
 
 TRANSLATIONS += \
     WriteScreener_fr_FR.ts

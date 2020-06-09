@@ -1,5 +1,6 @@
 #include "headers/mainwindow.h"
 #include "ui_mainwindow.h"
+#include "headers/about.h"
 
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
@@ -152,4 +153,10 @@ void MainWindow::on_actionColor_triggered()
 {
     QColor color = QColorDialog::getColor(Qt::black, this);
     ui->textEdit->setTextColor(color);
+}
+
+void MainWindow::on_actionAbout_triggered()
+{
+    About *win = new About(this);
+    win->show();
 }

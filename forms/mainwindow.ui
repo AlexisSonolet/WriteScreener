@@ -78,8 +78,15 @@ p, li { white-space: pre-wrap; }
     <addaction name="actionUndo"/>
     <addaction name="actionRedo"/>
    </widget>
+   <widget class="QMenu" name="menuHelp">
+    <property name="title">
+     <string>Help</string>
+    </property>
+    <addaction name="actionAbout"/>
+   </widget>
    <addaction name="menuFile"/>
    <addaction name="menuEdit"/>
+   <addaction name="menuHelp"/>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
   <widget class="QToolBar" name="toolBar">
@@ -108,8 +115,8 @@ p, li { white-space: pre-wrap; }
    <addaction name="actionactionAlignLeft"/>
    <addaction name="actionactionAlignRight"/>
    <addaction name="separator"/>
-   <addaction name="actionactionUppercase"/>
    <addaction name="actionactionLowercase"/>
+   <addaction name="actionactionUppercase"/>
   </widget>
   <action name="actionNew">
    <property name="icon">
@@ -276,6 +283,15 @@ p, li { white-space: pre-wrap; }
    </property>
    <property name="text">
     <string>Color</string>
+   </property>
+  </action>
+  <action name="actionAbout">
+   <property name="icon">
+    <iconset resource="../ressources/ressources.qrc">
+     <normaloff>:/images/images/new icons 2/icons8-question-mark-48.png</normaloff>:/images/images/new icons 2/icons8-question-mark-48.png</iconset>
+   </property>
+   <property name="text">
+    <string>About</string>
    </property>
   </action>
  </widget>

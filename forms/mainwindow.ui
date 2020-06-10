@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>667</width>
-    <height>517</height>
+    <height>518</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -78,7 +78,7 @@ QTabBar::tab:only-one {
        <enum>QTabWidget::Rounded</enum>
       </property>
       <property name="currentIndex">
-       <number>1</number>
+       <number>2</number>
       </property>
       <property name="iconSize">
        <size>
@@ -423,7 +423,6 @@ p, li { white-space: pre-wrap; }
    <addaction name="menuEdit"/>
    <addaction name="menuHelp"/>
   </widget>
-  <widget class="QStatusBar" name="statusbar"/>
   <widget class="QToolBar" name="toolBar">
    <property name="windowTitle">
     <string>toolBar</string>
@@ -456,6 +455,7 @@ p, li { white-space: pre-wrap; }
    <addaction name="actionactionUppercase"/>
    <addaction name="actionactionLowercase"/>
   </widget>
+  <widget class="QStatusBar" name="statusbar"/>
   <action name="actionNew">
    <property name="icon">
     <iconset resource="../ressources/ressources.qrc">

@@ -1,4 +1,4 @@
-#include "../headers/openproject.h"
+#include "headers/openproject.h"
 #include "ui_openproject.h"
 
 OpenProject::OpenProject(QWidget *parent)

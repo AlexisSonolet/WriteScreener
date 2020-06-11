@@ -5,7 +5,7 @@
 [![Downloads](https://img.shields.io/github/issues-closed-raw/AlexisSonolet/WriteScreener)](https://shields.io/)
 
 
-[![Generic badge](https://img.shields.io/badge/OS_Support:_Windows/Linux-blue.svg)](https://shields.io/) [![Linux Build Status](https://travis-ci.com/AlexisSonolet/WriteScreener.svg?branch=master)](https://travis-ci.com/AlexisSonolet/WriteScreener) &ensp;
+[![Platform](https://img.shields.io/badge/platform-Windows_||_Linux-blue.svg)](https://shields.io/) [![Linux Build Status](https://travis-ci.com/AlexisSonolet/WriteScreener.svg?branch=master)](https://travis-ci.com/AlexisSonolet/WriteScreener) &ensp;
 
 
 <div style="text-align:center"><img src="ressources/images/examples/Capture_3.PNG" /></div>

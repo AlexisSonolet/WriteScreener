@@ -52,7 +52,7 @@ QTabBar::tab:selected {
 }
 QTabBar::tab:!selected {
 	background-color: #333333;
-	border-color: #333333 
+	border-color: #333333;
 }
 
 /*
@@ -374,6 +374,164 @@ p, li { white-space: pre-wrap; }
        <attribute name="title">
         <string/>
        </attribute>
+       <layout class="QHBoxLayout" name="horizontalLayout_5">
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_2">
+          <item>
+           <widget class="QListWidget" name="listWidget">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>70</width>
+              <height>1000</height>
+             </size>
+            </property>
+            <property name="autoScroll">
+             <bool>true</bool>
+            </property>
+            <property name="resizeMode">
+             <enum>QListView::Fixed</enum>
+            </property>
+            <property name="layoutMode">
+             <enum>QListView::SinglePass</enum>
+            </property>
+            <property name="viewMode">
+             <enum>QListView::IconMode</enum>
+            </property>
+            <item>
+             <property name="text">
+              <string/>
+             </property>
+             <property name="icon">
+              <iconset>
+               <normalon>:/images/images/new icon/icons8-download-from-the-cloud-48.png</normalon>
+              </iconset>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string/>
+             </property>
+             <property name="icon">
+              <iconset>
+               <normalon>:/images/images/new icon/icons8-refresh-48.png</normalon>
+              </iconset>
+             </property>
+            </item>
+           </widget>
+          </item>
+          <item>
+           <widget class="QStackedWidget" name="stackedWidget">
+            <property name="currentIndex">
+             <number>1</number>
+            </property>
+            <widget class="QWidget" name="page">
+             <layout class="QVBoxLayout" name="verticalLayout_5">
+              <item>
+               <layout class="QVBoxLayout" name="verticalLayout_4">
+                <item>
+                 <widget class="QLabel" name="label_5">
+                  <property name="text">
+                   <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; color:#ffffff;&quot;&gt;Hello&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QProgressBar" name="progressBar">
+                  <property name="value">
+                   <number>24</number>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QLabel" name="label_6">
+                  <property name="text">
+                   <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; color:#ffffff;&quot;&gt;How are you&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QDial" name="dial"/>
+                </item>
+               </layout>
+              </item>
+             </layout>
+            </widget>
+            <widget class="QWidget" name="page_3">
+             <layout class="QVBoxLayout" name="verticalLayout_8">
+              <item>
+               <widget class="QTabWidget" name="tabWidget_2">
+                <property name="styleSheet">
+                 <string notr="true">QTabBar {
+background-color: black;
+}</string>
+                </property>
+                <property name="currentIndex">
+                 <number>1</number>
+                </property>
+                <property name="iconSize">
+                 <size>
+                  <width>50</width>
+                  <height>70</height>
+                 </size>
+                </property>
+                <property name="documentMode">
+                 <bool>true</bool>
+                </property>
+                <property name="tabsClosable">
+                 <bool>true</bool>
+                </property>
+                <property name="movable">
+                 <bool>true</bool>
+                </property>
+                <widget class="QWidget" name="tab_4">
+                 <attribute name="icon">
+                  <iconset>
+                   <normalon>:/images/images/new icon/icons8-print-48.png</normalon>
+                  </iconset>
+                 </attribute>
+                 <attribute name="title">
+                  <string/>
+                 </attribute>
+                </widget>
+                <widget class="QWidget" name="tab_5">
+                 <attribute name="icon">
+                  <iconset>
+                   <normalon>:/images/images/icons2/040-newspaper.png</normalon>
+                  </iconset>
+                 </attribute>
+                 <attribute name="title">
+                  <string/>
+                 </attribute>
+                </widget>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+            <widget class="QWidget" name="page_2">
+             <layout class="QVBoxLayout" name="verticalLayout_7">
+              <item>
+               <layout class="QVBoxLayout" name="verticalLayout_6">
+                <item>
+                 <widget class="QTextEdit" name="textEdit_2"/>
+                </item>
+                <item>
+                 <widget class="QTextEdit" name="textEdit_3"/>
+                </item>
+               </layout>
+              </item>
+             </layout>
+            </widget>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
       </widget>
      </widget>
     </item>

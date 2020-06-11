@@ -20,10 +20,12 @@ SOURCES += \
     src/mainwindow.cpp \
     src/main.cpp \
     src/mainwindow2.cpp \
+    src/mtabbar.cpp \
     src/openproject.cpp
 
 HEADERS += \
     headers/mainwindow2.h \
+    headers/mtabbar.h \
     headers/openproject.h \
     headers/mainwindow.h \
     headers/about.h

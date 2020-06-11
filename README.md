@@ -1,20 +1,16 @@
 # 📝🎬 WriteScreener
 
-[![Release](https://img.shields.io/github/v/release/AlexisSonolet/WriteScreener?include_prereleases)](https://shields.io/) &ensp;
-[![Downloads](https://img.shields.io/github/downloads/AlexisSonolet/WriteScreener/total)](https://shields.io/) &ensp;
-[![Downloads](https://img.shields.io/github/issues-raw/AlexisSonolet/WriteScreener)](https://shields.io/) &ensp;
+[![Release](https://img.shields.io/github/v/release/AlexisSonolet/WriteScreener?include_prereleases)](https://shields.io/) &ensp; <!--- [![Downloads](https://img.shields.io/github/downloads/AlexisSonolet/WriteScreener/total)](https://shields.io/) &nbsp; -->
+[![Downloads](https://img.shields.io/github/issues-raw/AlexisSonolet/WriteScreener)](https://shields.io/)
 [![Downloads](https://img.shields.io/github/issues-closed-raw/AlexisSonolet/WriteScreener)](https://shields.io/)
 
 
-[![Generic badge](https://img.shields.io/badge/Linux-blue.svg)](https://shields.io/) [![Linux Build Status](https://travis-ci.com/AlexisSonolet/WriteScreener.svg?branch=master)](https://travis-ci.com/AlexisSonolet/WriteScreener) &ensp;
-[![Generic badge](https://img.shields.io/badge/Windows-blue.svg)](https://shields.io/) [![Windows Build Status](https://img.shields.io/badge/build-passing-vert.svg)](https://shields.io/)
+[![Generic badge](https://img.shields.io/badge/OS_Support:_Windows/Linux-blue.svg)](https://shields.io/) [![Linux Build Status](https://travis-ci.com/AlexisSonolet/WriteScreener.svg?branch=master)](https://travis-ci.com/AlexisSonolet/WriteScreener) &ensp;
 
 
-<div style="text-align:center"><img src="ressources/images/examples/Capture_2.PNG" /></div>
+<div style="text-align:center"><img src="ressources/images/examples/Capture_3.PNG" /></div>
 
 ## A propos
-
-⚠️ Le logiciel est en construction, pas de version utilisable pour le moment ⚠️
 
 WriteScreener est un logiciel d'écriture de scénarios de manière collaborative.
 

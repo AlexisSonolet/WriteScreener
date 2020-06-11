@@ -1,9 +1,11 @@
 #include "headers/mainwindow2.h"
+#include "headers/mtabbar.h"
 
 MainWindow2::MainWindow2(QWidget *parent) : QMainWindow(parent)
 {
     setupUi(this);
     this->setCentralWidget(centralwidget);
+    this->setWindowTitle("WriteScreener");
 }
 
 
@@ -184,57 +186,19 @@ void MainWindow2::setupUi(QMainWindow *MainWindow)
     // === Tab widget ===
 
         // Tab setup
-        tabWidget = new QTabWidget(centralwidget);
+        tabWidget = new MTabWidget(centralwidget);
         tabWidget->setObjectName(QString::fromUtf8("tabWidget"));
         QSizePolicy sizePolicy(QSizePolicy::Minimum, QSizePolicy::Minimum);
         sizePolicy.setHorizontalStretch(0);
         sizePolicy.setVerticalStretch(0);
         sizePolicy.setHeightForWidth(tabWidget->sizePolicy().hasHeightForWidth());
         tabWidget->setSizePolicy(sizePolicy);
-        tabWidget->setStyleSheet(QString::fromUtf8("QTabWidget::pane { /* The tab widget frame */\n"
-        "	border-top: 0px solid #C2C7CB;\n"
-        "}\n"
-        "\n"
-        "QTabWidget::tab-bar {\n"
-        "	left: 0px; /* move to the right by 5px */\n"
-        "}\n"
-        "\n"
-        "/* Style the tab using the tab sub-control. Note that it reads QTabBar _not_ QTabWidget */\n"
-        "QTabBar::tab {\n"
-        "	border: 2px solid;\n"
-        "	border-right: 0px;\n"
-        "	border-top: 0px;\n"
-        "	border-bottom: 0px;\n"
-        "	min-width: 16ex;\n"
-        "	padding: -10px 5px 5px 5px;\n"
-        "	background-color: #333333;\n"
-        "}\n"
-        "\n"
-        "QTabBar::tab:selected {\n"
-        "	background-color: #444444;\n"
-        "	border-color: #FFFFFF;\n"
-        "}\n"
-        "QTabBar::tab:!selected {\n"
-        "	background-color: #333333;\n"
-        "	border-color: #333333 \n"
-        "}\n"
-        "\n"
-        "/*\n"
-        "QTabBar::tab:selected {\n"
-        "	margin-left: -4px;\n"
-        "	margin-right: -4px;\n"
-        "}\n"
-        "QTabBar::tab:first:selected {\n"
-        "	margin-left: 0;\n"
-        "}\n"
-        "QTabBar::tab:last:selected {\n"
-        "	margin-right: 0;\n"
-        "}\n"
-        "QTabBar::tab:only-one {\n"
-        "	margin: 0;\n"
-        "} \n"
-        "*/"));
-        tabWidget->setTabPosition(QTabWidget::West);
+
+        tabWidget->setStyleSheet(QString::fromUtf8(
+            "QTabWidget::pane { /* The tab widget frame */\n"
+            "	border-top: 0px solid #C2C7CB;\n"
+            "}\n")); // TODO : I have no idea why it should be here but anyway it works
+
         tabWidget->setTabShape(QTabWidget::Rounded);
         tabWidget->setIconSize(QSize(50, 50));
         tabWidget->setElideMode(Qt::ElideNone);

@@ -5,7 +5,6 @@ MainWindow2::MainWindow2(QWidget *parent) : QMainWindow(parent)
 {
     setupUi(this);
     this->setCentralWidget(centralwidget);
-    this->setWindowTitle("WriteScreener");
 }
 
 
@@ -22,165 +21,181 @@ void MainWindow2::setupUi(QMainWindow *MainWindow)
     // New
     actionNew = new QAction(MainWindow);
     actionNew->setObjectName(QString::fromUtf8("actionNew"));
-    QIcon icon;
-    icon.addFile(QString::fromUtf8(":/images/images/icons2/007-writing.png"), QSize(), QIcon::Normal, QIcon::Off);
-    actionNew->setIcon(icon);
+    QIcon iconNew;
+    iconNew.addFile(QString::fromUtf8(":/images/images/icons2/007-writing.png"), QSize(), QIcon::Normal, QIcon::Off);
+    actionNew->setIcon(iconNew);
     actionNew->setIconVisibleInMenu(true);
     connect(actionNew, &QAction::triggered, this, &MainWindow2::on_actionNew_triggered);
 
     // Open
     actionOpen = new QAction(MainWindow);
     actionOpen->setObjectName(QString::fromUtf8("actionOpen"));
-    QIcon icon1;
-    icon1.addFile(QString::fromUtf8(":/images/images/new icon/icons8-opened-folder-48.png"), QSize(), QIcon::Normal, QIcon::Off);
-    actionOpen->setIcon(icon1);
+    QIcon iconOpen;
+    iconOpen.addFile(QString::fromUtf8(":/images/images/new icon/icons8-opened-folder-48.png"), QSize(), QIcon::Normal, QIcon::Off);
+    actionOpen->setIcon(iconOpen);
     connect(actionOpen, &QAction::triggered, this, &MainWindow2::on_actionOpen_triggered);
 
     // Save
     actionSave = new QAction(MainWindow);
     actionSave->setObjectName(QString::fromUtf8("actionSave"));
-    QIcon icon2;
-    icon2.addFile(QString::fromUtf8(":/images/images/icons2/047-floppy disk.png"), QSize(), QIcon::Normal, QIcon::On);
-    actionSave->setIcon(icon2);
+    QIcon iconSave;
+    iconSave.addFile(QString::fromUtf8(":/images/images/icons2/047-floppy disk.png"), QSize(), QIcon::Normal, QIcon::On);
+    actionSave->setIcon(iconSave);
     connect(actionSave, &QAction::triggered, this, &MainWindow2::on_actionSave_triggered);
 
     // Exit
     actionExit = new QAction(MainWindow);
     actionExit->setObjectName(QString::fromUtf8("actionExit"));
     // actionExit->setCheckable(false);
-    QIcon icon3;
-    icon3.addFile(QString::fromUtf8(":/images/images/new icon/icons8-delete-48.png"), QSize(), QIcon::Normal, QIcon::On);
-    actionExit->setIcon(icon3);
+    QIcon iconExit;
+    iconExit.addFile(QString::fromUtf8(":/images/images/new icon/icons8-delete-48.png"), QSize(), QIcon::Normal, QIcon::On);
+    actionExit->setIcon(iconExit);
     connect(actionExit, &QAction::triggered, this, &MainWindow2::on_actionExit_triggered);
 
     // Print
     actionPrint = new QAction(MainWindow);
     actionPrint->setObjectName(QString::fromUtf8("actionPrint"));
-    QIcon icon4;
-    icon4.addFile(QString::fromUtf8(":/images/images/new icon/icons8-print-48.png"), QSize(), QIcon::Normal, QIcon::Off);
-    actionPrint->setIcon(icon4);
+    QIcon iconPrint;
+    iconPrint.addFile(QString::fromUtf8(":/images/images/new icon/icons8-print-48.png"), QSize(), QIcon::Normal, QIcon::Off);
+    actionPrint->setIcon(iconPrint);
     connect(actionPrint, &QAction::triggered, this, &MainWindow2::on_actionPrint_triggered);
 
     // Copy
     actionCopy = new QAction(MainWindow);
     actionCopy->setObjectName(QString::fromUtf8("actionCopy"));
-    QIcon icon5;
-    icon5.addFile(QString::fromUtf8(":/images/images/new icon/icons8-copy-48.png"), QSize(), QIcon::Normal, QIcon::Off);
-    actionCopy->setIcon(icon5);
+    QIcon iconCopy;
+    iconCopy.addFile(QString::fromUtf8(":/images/images/new icon/icons8-copy-48.png"), QSize(), QIcon::Normal, QIcon::Off);
+    actionCopy->setIcon(iconCopy);
     connect(actionCopy, &QAction::triggered, this, &MainWindow2::on_actionCopy_triggered);
 
     // Paste
     actionPaste = new QAction(MainWindow);
     actionPaste->setObjectName(QString::fromUtf8("actionPaste"));
-    QIcon icon6;
-    icon6.addFile(QString::fromUtf8(":/images/images/new icon/icons8-paste-48.png"), QSize(), QIcon::Normal, QIcon::Off);
-    actionPaste->setIcon(icon6);
+    QIcon iconPaste;
+    iconPaste.addFile(QString::fromUtf8(":/images/images/new icon/icons8-paste-48.png"), QSize(), QIcon::Normal, QIcon::Off);
+    actionPaste->setIcon(iconPaste);
     connect(actionPaste, &QAction::triggered, this, &MainWindow2::on_actionPaste_triggered);
 
     // Cut
     actionCut = new QAction(MainWindow);
     actionCut->setObjectName(QString::fromUtf8("actionCut"));
-    QIcon icon7;
-    icon7.addFile(QString::fromUtf8(":/images/images/new icon/icons8-cut-48.png"), QSize(), QIcon::Normal, QIcon::Off);
-    actionCut->setIcon(icon7);
+    QIcon iconCut;
+    iconCut.addFile(QString::fromUtf8(":/images/images/new icon/icons8-cut-48.png"), QSize(), QIcon::Normal, QIcon::Off);
+    actionCut->setIcon(iconCut);
     connect(actionCut, &QAction::triggered, this, &MainWindow2::on_actionCut_triggered);
 
     // Undo
     actionUndo = new QAction(MainWindow);
     actionUndo->setObjectName(QString::fromUtf8("actionUndo"));
-    QIcon icon8;
-    icon8.addFile(QString::fromUtf8(":/images/images/new icon/icons8-undo-48.png"), QSize(), QIcon::Normal, QIcon::Off);
-    actionUndo->setIcon(icon8);
+    QIcon iconUndo;
+    iconUndo.addFile(QString::fromUtf8(":/images/images/new icon/icons8-undo-48.png"), QSize(), QIcon::Normal, QIcon::Off);
+    actionUndo->setIcon(iconUndo);
     connect(actionUndo, &QAction::triggered, this, &MainWindow2::on_actionUndo_triggered);
 
     // Redo
     actionRedo = new QAction(MainWindow);
     actionRedo->setObjectName(QString::fromUtf8("actionRedo"));
-    QIcon icon9;
-    icon9.addFile(QString::fromUtf8(":/images/images/new icon/icons8-redo-48.png"), QSize(), QIcon::Normal, QIcon::Off);
-    actionRedo->setIcon(icon9);
+    QIcon iconRedo;
+    iconRedo.addFile(QString::fromUtf8(":/images/images/new icon/icons8-redo-48.png"), QSize(), QIcon::Normal, QIcon::Off);
+    actionRedo->setIcon(iconRedo);
     connect(actionRedo, &QAction::triggered, this, &MainWindow2::on_actionRedo_triggered);
 
     // Font
     actionPolice = new QAction(MainWindow);
     actionPolice->setObjectName(QString::fromUtf8("actionPolice"));
-    QIcon icon10;
-    icon10.addFile(QString::fromUtf8(":/images/images/new icons 2/icons8-choose-font-30.png"), QSize(), QIcon::Normal, QIcon::Off);
-    actionPolice->setIcon(icon10);
+    QIcon iconPolice;
+    iconPolice.addFile(QString::fromUtf8(":/images/images/new icons 2/icons8-choose-font-30.png"), QSize(), QIcon::Normal, QIcon::Off);
+    actionPolice->setIcon(iconPolice);
     connect(actionPolice, &QAction::triggered, this, &MainWindow2::on_actionPolice_triggered);
 
     // Align Center
     actionactionAlignCenter = new QAction(MainWindow);
     actionactionAlignCenter->setObjectName(QString::fromUtf8("actionactionAlignCenter"));
-    QIcon icon11;
-    icon11.addFile(QString::fromUtf8(":/images/images/new icons 2/icons8-align-center-24.png"), QSize(), QIcon::Normal, QIcon::Off);
-    actionactionAlignCenter->setIcon(icon11);
+    QIcon iconAlignCenter;
+    iconAlignCenter.addFile(QString::fromUtf8(":/images/images/new icons 2/icons8-align-center-24.png"), QSize(), QIcon::Normal, QIcon::Off);
+    actionactionAlignCenter->setIcon(iconAlignCenter);
     connect(actionactionAlignCenter, &QAction::triggered, this, &MainWindow2::on_actionactionAlignCenter_triggered);
 
     // Align Left
     actionactionAlignLeft = new QAction(MainWindow);
     actionactionAlignLeft->setObjectName(QString::fromUtf8("actionactionAlignLeft"));
-    QIcon icon12;
-    icon12.addFile(QString::fromUtf8(":/images/images/new icons 2/icons8-align-left-24.png"), QSize(), QIcon::Normal, QIcon::Off);
-    actionactionAlignLeft->setIcon(icon12);
+    QIcon iconAlignLeft;
+    iconAlignLeft.addFile(QString::fromUtf8(":/images/images/new icons 2/icons8-align-left-24.png"), QSize(), QIcon::Normal, QIcon::Off);
+    actionactionAlignLeft->setIcon(iconAlignLeft);
     connect(actionactionAlignLeft, &QAction::triggered, this, &MainWindow2::on_actionactionAlignLeft_triggered);
 
     // Align Right
     actionactionAlignRight = new QAction(MainWindow);
     actionactionAlignRight->setObjectName(QString::fromUtf8("actionactionAlignRight"));
-    QIcon icon13;
-    icon13.addFile(QString::fromUtf8(":/images/images/new icons 2/icons8-align-right-24.png"), QSize(), QIcon::Normal, QIcon::Off);
-    actionactionAlignRight->setIcon(icon13);
+    QIcon iconAlignRight;
+    iconAlignRight.addFile(QString::fromUtf8(":/images/images/new icons 2/icons8-align-right-24.png"), QSize(), QIcon::Normal, QIcon::Off);
+    actionactionAlignRight->setIcon(iconAlignRight);
     connect(actionactionAlignRight, &QAction::triggered, this, &MainWindow2::on_actionactionAlignRight_triggered);
 
     // Align Justify
     actionactionAlignJustify = new QAction(MainWindow);
     actionactionAlignJustify->setObjectName(QString::fromUtf8("actionactionAlignJustify"));
-    QIcon icon14;
-    icon14.addFile(QString::fromUtf8(":/images/images/new icons 2/icons8-align-justify-24.png"), QSize(), QIcon::Normal, QIcon::Off);
-    actionactionAlignJustify->setIcon(icon14);
+    QIcon iconAlignJustify;
+    iconAlignJustify.addFile(QString::fromUtf8(":/images/images/new icons 2/icons8-align-justify-24.png"), QSize(), QIcon::Normal, QIcon::Off);
+    actionactionAlignJustify->setIcon(iconAlignJustify);
     connect(actionactionAlignJustify, &QAction::triggered, this, &MainWindow2::on_actionactionAlignJustify_triggered);
 
     // Uppercase
     actionactionUppercase = new QAction(MainWindow);
     actionactionUppercase->setObjectName(QString::fromUtf8("actionactionUppercase"));
-    QIcon icon15;
-    icon15.addFile(QString::fromUtf8(":/images/images/new icons 2/icons8-uppercase-24.png"), QSize(), QIcon::Normal, QIcon::Off);
-    actionactionUppercase->setIcon(icon15);
+    QIcon iconUppercase;
+    iconUppercase.addFile(QString::fromUtf8(":/images/images/new icons 2/icons8-uppercase-24.png"), QSize(), QIcon::Normal, QIcon::Off);
+    actionactionUppercase->setIcon(iconUppercase);
     connect(actionactionUppercase, &QAction::triggered, this, &MainWindow2::on_actionactionUppercase_triggered);
 
     // Lowercase
     actionactionLowercase = new QAction(MainWindow);
     actionactionLowercase->setObjectName(QString::fromUtf8("actionactionLowercase"));
-    QIcon icon16;
-    icon16.addFile(QString::fromUtf8(":/images/images/new icons 2/icons8-lowercase-24.png"), QSize(), QIcon::Normal, QIcon::Off);
-    actionactionLowercase->setIcon(icon16);
+    QIcon iconLowercase;
+    iconLowercase.addFile(QString::fromUtf8(":/images/images/new icons 2/icons8-lowercase-24.png"), QSize(), QIcon::Normal, QIcon::Off);
+    actionactionLowercase->setIcon(iconLowercase);
     connect(actionactionLowercase, &QAction::triggered, this, &MainWindow2::on_actionactionLowercase_triggered);
+
+    // Bold
+    actionactionBold = new QAction(MainWindow);
+    actionactionBold->setObjectName(QString::fromUtf8("actionactionBold"));
+    QIcon iconBold;
+    iconBold.addFile(QString::fromUtf8(":/images/images/new icons 2/icons8-bold-24.png"), QSize(), QIcon::Normal, QIcon::Off);
+    actionactionBold->setIcon(iconBold);
+    connect(actionactionBold, &QAction::triggered, this, &MainWindow2::on_actionactionBold_triggered);
+
+    // Italic
+    actionactionItalic = new QAction(MainWindow);
+    actionactionItalic->setObjectName(QString::fromUtf8("actionactionItalic"));
+    QIcon iconItalic;
+    iconItalic.addFile(QString::fromUtf8(":/images/images/new icons 2/icons8-italic-24.png"), QSize(), QIcon::Normal, QIcon::Off);
+    actionactionItalic->setIcon(iconItalic);
+    connect(actionactionItalic, &QAction::triggered, this, &MainWindow2::on_actionactionItalic_triggered);
 
     // Color
     actionColor = new QAction(MainWindow);
     actionColor->setObjectName(QString::fromUtf8("actionColor"));
-    QIcon icon17;
-    icon17.addFile(QString::fromUtf8(":/images/images/new icons 2/icons8-color-wheel-48.png"), QSize(), QIcon::Normal, QIcon::Off);
-    actionColor->setIcon(icon17);
+    QIcon iconColor;
+    iconColor.addFile(QString::fromUtf8(":/images/images/new icons 2/icons8-color-wheel-48.png"), QSize(), QIcon::Normal, QIcon::Off);
+    actionColor->setIcon(iconColor);
     connect(actionColor, &QAction::triggered, this, &MainWindow2::on_actionColor_triggered);
 
     // About
     actionAbout = new QAction(MainWindow);
     actionAbout->setObjectName(QString::fromUtf8("actionAbout"));
-    QIcon icon18;
-    icon18.addFile(QString::fromUtf8(":/images/images/new icons 2/icons8-question-mark-48.png"), QSize(), QIcon::Normal, QIcon::Off);
-    actionAbout->setIcon(icon18);
+    QIcon iconAbout;
+    iconAbout.addFile(QString::fromUtf8(":/images/images/new icons 2/icons8-question-mark-48.png"), QSize(), QIcon::Normal, QIcon::Off);
+    actionAbout->setIcon(iconAbout);
     connect(actionAbout, &QAction::triggered, this, &MainWindow2::on_actionAbout_triggered);
 
 
     // === Central widget ===
-    // The central widget is disposed as the verticalLayout_3 and contains the Tab Widget
+    // The central widget is disposed as the vLayoutCentralWidget and contains the Tab Widget
     centralwidget = new QWidget(MainWindow);
     centralwidget->setObjectName(QString::fromUtf8("centralwidget"));
     centralwidget->setStyleSheet(QString::fromUtf8("background-color: #333333;"));
-    verticalLayout_3 = new QVBoxLayout(centralwidget);
-    verticalLayout_3->setObjectName(QString::fromUtf8("verticalLayout_3"));
+    vLayoutCentralWidget = new QVBoxLayout(centralwidget);
+    vLayoutCentralWidget->setObjectName(QString::fromUtf8("vLayoutCentralWidget"));
 
 
     // === Tab widget ===
@@ -206,169 +221,160 @@ void MainWindow2::setupUi(QMainWindow *MainWindow)
 
         // === Tabs ===
 
-        // Tab_2 is for project infos. Disposed as the horizontalLayout_4. It contains the horizontalLayout_3
-            tab_2 = new QWidget();
-            tab_2->setObjectName(QString::fromUtf8("tab_2"));
-            sizePolicy.setHeightForWidth(tab_2->sizePolicy().hasHeightForWidth());
-            tab_2->setSizePolicy(sizePolicy);
-            tab_2->setStyleSheet(QString::fromUtf8("QLineEdit {\n"
+        // tabProjectInfos is for project infos. Disposed as the hLayoutProjectInfos. It contains the hLayoutListInfos
+            tabProjectInfos = new QWidget();
+            tabProjectInfos->setObjectName(QString::fromUtf8("tabProjectInfos"));
+            sizePolicy.setHeightForWidth(tabProjectInfos->sizePolicy().hasHeightForWidth());
+            tabProjectInfos->setSizePolicy(sizePolicy);
+            tabProjectInfos->setStyleSheet(QString::fromUtf8("QLineEdit {\n"
             "background-color: #FFFFFF;\n"
             "border-radius: 3px;\n"
             "}"));
-            horizontalLayout_4 = new QHBoxLayout(tab_2);
-            horizontalLayout_4->setObjectName(QString::fromUtf8("horizontalLayout_4"));
+            hLayoutProjectInfos = new QHBoxLayout(tabProjectInfos);
+            hLayoutProjectInfos->setObjectName(QString::fromUtf8("hLayoutProjectInfos"));
 
-                // Tab_2 > horizontalLayout3 conains 2 horizontal spacers and in the middle, the verticalLayout_2
-                horizontalLayout_3 = new QHBoxLayout();
-                horizontalLayout_3->setObjectName(QString::fromUtf8("horizontalLayout_3"));
-                    horizontalSpacer = new QSpacerItem(40, 20, QSizePolicy::Preferred, QSizePolicy::Minimum);
-                horizontalLayout_3->addItem(horizontalSpacer);
+                // tabProjectInfos > horizontalLayout3 conains 2 horizontal spacers and in the middle, the vLayoutListInfos
+                hLayoutListInfos = new QHBoxLayout();
+                hLayoutListInfos->setObjectName(QString::fromUtf8("hLayoutListInfos"));
+                    horizontalSpacerLeft = new QSpacerItem(40, 20, QSizePolicy::Preferred, QSizePolicy::Minimum);
+                hLayoutListInfos->addItem(horizontalSpacerLeft);
 
-                    verticalLayout_2 = new QVBoxLayout();
-                    verticalLayout_2->setObjectName(QString::fromUtf8("verticalLayout_2"));
+                    vLayoutListInfos = new QVBoxLayout();
+                    vLayoutListInfos->setObjectName(QString::fromUtf8("vLayoutListInfos"));
 
-                        label = new QLabel(tab_2);
-                        label->setObjectName(QString::fromUtf8("label"));
+                        labelTitle = new QLabel(tabProjectInfos);
+                        labelTitle->setObjectName(QString::fromUtf8("labelTitle"));
                         QSizePolicy sizePolicy1(QSizePolicy::Preferred, QSizePolicy::Maximum);
                         sizePolicy1.setHorizontalStretch(0);
                         sizePolicy1.setVerticalStretch(0);
-                        sizePolicy1.setHeightForWidth(label->sizePolicy().hasHeightForWidth());
-                        label->setSizePolicy(sizePolicy1);
+                        sizePolicy1.setHeightForWidth(labelTitle->sizePolicy().hasHeightForWidth());
+                        labelTitle->setSizePolicy(sizePolicy1);
 
-                    verticalLayout_2->addWidget(label);
+                    vLayoutListInfos->addWidget(labelTitle);
 
-                        lineEdit_3 = new QLineEdit(tab_2);
-                        lineEdit_3->setObjectName(QString::fromUtf8("lineEdit_3"));
+                        lineEditTitle = new QLineEdit(tabProjectInfos);
+                        lineEditTitle->setObjectName(QString::fromUtf8("lineEditTitle"));
                         QFont font;
                         font.setFamily(QString::fromUtf8("Courier New"));
                         font.setPointSize(14);
                         font.setBold(false);
                         font.setWeight(50);
-                        lineEdit_3->setFont(font);
+                        lineEditTitle->setFont(font);
 
-                    verticalLayout_2->addWidget(lineEdit_3);
+                    vLayoutListInfos->addWidget(lineEditTitle);
 
-                        verticalSpacer_4 = new QSpacerItem(20, 20, QSizePolicy::Minimum, QSizePolicy::Minimum);
+                        verticalSpacerTitle = new QSpacerItem(20, 20, QSizePolicy::Minimum, QSizePolicy::Minimum);
 
-                    verticalLayout_2->addItem(verticalSpacer_4);
+                    vLayoutListInfos->addItem(verticalSpacerTitle);
 
-                        label_2 = new QLabel(tab_2);
-                        label_2->setObjectName(QString::fromUtf8("label_2"));
-                        sizePolicy1.setHeightForWidth(label_2->sizePolicy().hasHeightForWidth());
-                        label_2->setSizePolicy(sizePolicy1);
+                        labelWriter = new QLabel(tabProjectInfos);
+                        labelWriter->setObjectName(QString::fromUtf8("labelWriter"));
+                        sizePolicy1.setHeightForWidth(labelWriter->sizePolicy().hasHeightForWidth());
+                        labelWriter->setSizePolicy(sizePolicy1);
 
-                    verticalLayout_2->addWidget(label_2);
+                    vLayoutListInfos->addWidget(labelWriter);
 
-                        lineEdit_2 = new QLineEdit(tab_2);
-                        lineEdit_2->setObjectName(QString::fromUtf8("lineEdit_2"));
+                        lineEditWriter = new QLineEdit(tabProjectInfos);
+                        lineEditWriter->setObjectName(QString::fromUtf8("lineEditWriter"));
                         QFont font1;
                         font1.setFamily(QString::fromUtf8("Courier New"));
                         font1.setPointSize(14);
-                        lineEdit_2->setFont(font1);
+                        lineEditWriter->setFont(font1);
 
-                    verticalLayout_2->addWidget(lineEdit_2);
+                    vLayoutListInfos->addWidget(lineEditWriter);
 
-                        verticalSpacer_3 = new QSpacerItem(20, 20, QSizePolicy::Minimum, QSizePolicy::Minimum);
+                        verticalSpacerWriter = new QSpacerItem(20, 20, QSizePolicy::Minimum, QSizePolicy::Minimum);
 
-                    verticalLayout_2->addItem(verticalSpacer_3);
+                    vLayoutListInfos->addItem(verticalSpacerWriter);
 
-                        label_3 = new QLabel(tab_2);
-                        label_3->setObjectName(QString::fromUtf8("label_3"));
-                        sizePolicy1.setHeightForWidth(label_3->sizePolicy().hasHeightForWidth());
-                        label_3->setSizePolicy(sizePolicy1);
+                        labelDirector = new QLabel(tabProjectInfos);
+                        labelDirector->setObjectName(QString::fromUtf8("labelDirector"));
+                        sizePolicy1.setHeightForWidth(labelDirector->sizePolicy().hasHeightForWidth());
+                        labelDirector->setSizePolicy(sizePolicy1);
 
-                    verticalLayout_2->addWidget(label_3);
+                    vLayoutListInfos->addWidget(labelDirector);
 
-                        lineEdit = new QLineEdit(tab_2);
-                        lineEdit->setObjectName(QString::fromUtf8("lineEdit"));
-                        lineEdit->setFont(font1);
-                        lineEdit->setStyleSheet(QString::fromUtf8(""));
+                        lineEditDirector = new QLineEdit(tabProjectInfos);
+                        lineEditDirector->setObjectName(QString::fromUtf8("lineEditDirector"));
+                        lineEditDirector->setFont(font1);
+                        lineEditDirector->setStyleSheet(QString::fromUtf8(""));
 
-                    verticalLayout_2->addWidget(lineEdit);
+                    vLayoutListInfos->addWidget(lineEditDirector);
 
-                        verticalSpacer = new QSpacerItem(20, 20, QSizePolicy::Minimum, QSizePolicy::Minimum);
+                        verticalSpacerDirector = new QSpacerItem(20, 20, QSizePolicy::Minimum, QSizePolicy::Minimum);
 
-                    verticalLayout_2->addItem(verticalSpacer);
+                    vLayoutListInfos->addItem(verticalSpacerDirector);
 
-                        label_4 = new QLabel(tab_2);
-                        label_4->setObjectName(QString::fromUtf8("label_4"));
-                        sizePolicy1.setHeightForWidth(label_4->sizePolicy().hasHeightForWidth());
-                        label_4->setSizePolicy(sizePolicy1);
+                        labelProducer = new QLabel(tabProjectInfos);
+                        labelProducer->setObjectName(QString::fromUtf8("labelProducer"));
+                        sizePolicy1.setHeightForWidth(labelProducer->sizePolicy().hasHeightForWidth());
+                        labelProducer->setSizePolicy(sizePolicy1);
 
-                    verticalLayout_2->addWidget(label_4);
+                    vLayoutListInfos->addWidget(labelProducer);
 
-                        lineEdit_4 = new QLineEdit(tab_2);
-                        lineEdit_4->setObjectName(QString::fromUtf8("lineEdit_4"));
-                        lineEdit_4->setFont(font1);
+                        lineEditProducer = new QLineEdit(tabProjectInfos);
+                        lineEditProducer->setObjectName(QString::fromUtf8("lineEditProducer"));
+                        lineEditProducer->setFont(font1);
 
-                    verticalLayout_2->addWidget(lineEdit_4);
+                    vLayoutListInfos->addWidget(lineEditProducer);
 
-                        verticalSpacer_2 = new QSpacerItem(20, 20, QSizePolicy::Minimum, QSizePolicy::Expanding);
+                        verticalSpacerEndListInfos = new QSpacerItem(20, 20, QSizePolicy::Minimum, QSizePolicy::Expanding);
 
-                    verticalLayout_2->addItem(verticalSpacer_2);
+                    vLayoutListInfos->addItem(verticalSpacerEndListInfos);
 
-                horizontalLayout_3->addLayout(verticalLayout_2);
+                hLayoutListInfos->addLayout(vLayoutListInfos);
 
-                    horizontalSpacer_2 = new QSpacerItem(40, 20, QSizePolicy::Preferred, QSizePolicy::Minimum);
+                    horizontalSpacerRight = new QSpacerItem(40, 20, QSizePolicy::Preferred, QSizePolicy::Minimum);
+                hLayoutListInfos->addItem(horizontalSpacerRight);
 
-                horizontalLayout_3->addItem(horizontalSpacer_2);
+            hLayoutProjectInfos->addLayout(hLayoutListInfos);
 
+            QIcon iconProjectInfosTab;
+            iconProjectInfosTab.addFile(QString::fromUtf8(":/images/images/icons2/007-writing.png"), QSize(), QIcon::Normal, QIcon::On);
 
-            horizontalLayout_4->addLayout(horizontalLayout_3);
-
-            QIcon icon19;
-            icon19.addFile(QString::fromUtf8(":/images/images/icons2/007-writing.png"), QSize(), QIcon::Normal, QIcon::On);
-
-        tabWidget->addTab(tab_2, icon19, QString());
+        tabWidget->addTab(tabProjectInfos, iconProjectInfosTab, QString());
 
         // Tab is the scrip edit area. Disposed as the horizontalLayout
-            tab = new QWidget();
-            tab->setObjectName(QString::fromUtf8("tab"));
+            tabScriptEdit = new QWidget();
+            tabScriptEdit->setObjectName(QString::fromUtf8("tabScriptEdit"));
             QSizePolicy sizePolicy2(QSizePolicy::MinimumExpanding, QSizePolicy::MinimumExpanding);
             sizePolicy2.setHorizontalStretch(0);
             sizePolicy2.setVerticalStretch(0);
-            sizePolicy2.setHeightForWidth(tab->sizePolicy().hasHeightForWidth());
-            tab->setSizePolicy(sizePolicy2);
-            tab->setStyleSheet(QString::fromUtf8(""));
-            horizontalLayout = new QHBoxLayout(tab);
-            horizontalLayout->setObjectName(QString::fromUtf8("horizontalLayout"));
+            sizePolicy2.setHeightForWidth(tabScriptEdit->sizePolicy().hasHeightForWidth());
+            tabScriptEdit->setSizePolicy(sizePolicy2);
+            tabScriptEdit->setStyleSheet(QString::fromUtf8(""));
+            hLayoutScriptEdit = new QHBoxLayout(tabScriptEdit);
+            hLayoutScriptEdit->setObjectName(QString::fromUtf8("hLayoutScriptEdit"));
 
-                verticalLayout = new QVBoxLayout();
-                verticalLayout->setObjectName(QString::fromUtf8("verticalLayout"));
+                vLayoutScriptEdit = new QVBoxLayout();
+                vLayoutScriptEdit->setObjectName(QString::fromUtf8("vLayoutScriptEdit"));
 
-                    textEdit = new QTextEdit(tab);
-                    textEdit->setObjectName(QString::fromUtf8("textEdit"));
-                    sizePolicy.setHeightForWidth(textEdit->sizePolicy().hasHeightForWidth());
-                    textEdit->setSizePolicy(sizePolicy);
+                    textScriptEdit = new QTextEdit(tabScriptEdit);
+                    textScriptEdit->setObjectName(QString::fromUtf8("textScriptEdit"));
+                    sizePolicy.setHeightForWidth(textScriptEdit->sizePolicy().hasHeightForWidth());
+                    textScriptEdit->setSizePolicy(sizePolicy);
                     QFont font2;
                     font2.setFamily(QString::fromUtf8("Courier New"));
                     font2.setPointSize(12);
-                    textEdit->setFont(font2);
-                    textEdit->setStyleSheet(QString::fromUtf8("background-color: #FFFFFF;"));
+                    textScriptEdit->setFont(font2);
+                    textScriptEdit->setStyleSheet(QString::fromUtf8("background-color: #FFFFFF;"));
 
-                verticalLayout->addWidget(textEdit);
+                vLayoutScriptEdit->addWidget(textScriptEdit);
 
-            horizontalLayout->addLayout(verticalLayout);
+            hLayoutScriptEdit->addLayout(vLayoutScriptEdit);
 
-            QIcon icon20;
+            QIcon iconScriptEditTab;
             QString iconThemeName = QString::fromUtf8("NormalOn");
             if (QIcon::hasThemeIcon(iconThemeName)) {
-                icon20 = QIcon::fromTheme(iconThemeName);
+                iconScriptEditTab = QIcon::fromTheme(iconThemeName);
             } else {
-                icon20.addFile(QString::fromUtf8(":/images/images/new icon/icons8-copy-48.png"), QSize(), QIcon::Normal, QIcon::On);
+                iconScriptEditTab.addFile(QString::fromUtf8(":/images/images/new icon/icons8-copy-48.png"), QSize(), QIcon::Normal, QIcon::On);
             }
 
-        tabWidget->addTab(tab, icon20, QString());
+        tabWidget->addTab(tabScriptEdit, iconScriptEditTab, QString());
 
-        // Tab_3 is an uknown tab
-            tab_3 = new QWidget();
-            tab_3->setObjectName(QString::fromUtf8("tab_3"));
-            QIcon icon21;
-            icon21.addFile(QString::fromUtf8(":/images/images/new icon/icons8-picture-48.png"), QSize(), QIcon::Normal, QIcon::On);
 
-        tabWidget->addTab(tab_3, icon21, QString());
-
-    verticalLayout_3->addWidget(tabWidget);
+    vLayoutCentralWidget->addWidget(tabWidget);
     MainWindow->setCentralWidget(centralwidget);
 
 
@@ -432,6 +438,9 @@ void MainWindow2::setupUi(QMainWindow *MainWindow)
         toolBar->addSeparator();
         toolBar->addAction(actionactionUppercase);
         toolBar->addAction(actionactionLowercase);
+        toolBar->addSeparator();
+        toolBar->addAction(actionactionBold);
+        toolBar->addAction(actionactionItalic);
 
 
     // === Status Bar ===
@@ -447,50 +456,51 @@ void MainWindow2::setupUi(QMainWindow *MainWindow)
 
 void MainWindow2::retranslateUi(QMainWindow *MainWindow)
 {
-    MainWindow->setWindowTitle(QCoreApplication::translate("MainWindow", "MainWindow", nullptr));
-    actionNew->setText(QCoreApplication::translate("MainWindow", "New", nullptr));
-    actionOpen->setText(QCoreApplication::translate("MainWindow", "Open", nullptr));
-    actionSave->setText(QCoreApplication::translate("MainWindow", "Save as", nullptr));
-    actionExit->setText(QCoreApplication::translate("MainWindow", "Exit", nullptr));
-    actionPrint->setText(QCoreApplication::translate("MainWindow", "Print", nullptr));
-    actionCopy->setText(QCoreApplication::translate("MainWindow", "Copy", nullptr));
-    actionPaste->setText(QCoreApplication::translate("MainWindow", "Paste", nullptr));
-    actionCut->setText(QCoreApplication::translate("MainWindow", "Cut", nullptr));
-    actionUndo->setText(QCoreApplication::translate("MainWindow", "Undo", nullptr));
-    actionRedo->setText(QCoreApplication::translate("MainWindow", "Redo", nullptr));
-    actionPolice->setText(QCoreApplication::translate("MainWindow", "Police", nullptr));
-    actionactionAlignCenter->setText(QCoreApplication::translate("MainWindow", "actionAlignCenter", nullptr));
-    actionactionAlignLeft->setText(QCoreApplication::translate("MainWindow", "actionAlignLeft", nullptr));
-    actionactionAlignRight->setText(QCoreApplication::translate("MainWindow", "actionAlignRight", nullptr));
-    actionactionAlignJustify->setText(QCoreApplication::translate("MainWindow", "actionAlignJustify", nullptr));
-    actionactionUppercase->setText(QCoreApplication::translate("MainWindow", "actionUppercase", nullptr));
-    actionactionLowercase->setText(QCoreApplication::translate("MainWindow", "actionLowercase", nullptr));
-    actionColor->setText(QCoreApplication::translate("MainWindow", "Color", nullptr));
-    actionAbout->setText(QCoreApplication::translate("MainWindow", "About", nullptr));
-    label->setText(QCoreApplication::translate("MainWindow", "<html><head/><body><p><span style=\" font-size:14pt; font-weight:600; color:#ffffff;\">Title</span></p></body></html>", nullptr));
-    label_2->setText(QCoreApplication::translate("MainWindow", "<html><head/><body><p><span style=\" font-size:14pt; font-weight:600; color:#ffffff;\">Writer</span></p></body></html>", nullptr));
-    label_3->setText(QCoreApplication::translate("MainWindow", "<html><head/><body><p><span style=\" font-size:14pt; font-weight:600; color:#ffffff;\">Director</span></p></body></html>", nullptr));
-    label_4->setText(QCoreApplication::translate("MainWindow", "<html><head/><body><p><span style=\" font-size:14pt; font-weight:600; color:#ffffff;\">Producer</span></p></body></html>", nullptr));
-    tabWidget->setTabText(tabWidget->indexOf(tab_2), QString());
+    MainWindow->setWindowTitle(QCoreApplication::translate("WriteScreener", "WriteScreener", nullptr));
+    actionNew->setText(QCoreApplication::translate("WriteScreener", "New", nullptr));
+    actionOpen->setText(QCoreApplication::translate("WriteScreener", "Open", nullptr));
+    actionSave->setText(QCoreApplication::translate("WriteScreener", "Save as", nullptr));
+    actionExit->setText(QCoreApplication::translate("WriteScreener", "Exit", nullptr));
+    actionPrint->setText(QCoreApplication::translate("WriteScreener", "Print", nullptr));
+    actionCopy->setText(QCoreApplication::translate("WriteScreener", "Copy", nullptr));
+    actionPaste->setText(QCoreApplication::translate("WriteScreener", "Paste", nullptr));
+    actionCut->setText(QCoreApplication::translate("WriteScreener", "Cut", nullptr));
+    actionUndo->setText(QCoreApplication::translate("WriteScreener", "Undo", nullptr));
+    actionRedo->setText(QCoreApplication::translate("WriteScreener", "Redo", nullptr));
+    actionPolice->setText(QCoreApplication::translate("WriteScreener", "Police", nullptr));
+    actionactionAlignCenter->setText(QCoreApplication::translate("WriteScreener", "actionAlignCenter", nullptr));
+    actionactionAlignLeft->setText(QCoreApplication::translate("WriteScreener", "actionAlignLeft", nullptr));
+    actionactionAlignRight->setText(QCoreApplication::translate("WriteScreener", "actionAlignRight", nullptr));
+    actionactionAlignJustify->setText(QCoreApplication::translate("WriteScreener", "actionAlignJustify", nullptr));
+    actionactionUppercase->setText(QCoreApplication::translate("WriteScreener", "actionUppercase", nullptr));
+    actionactionLowercase->setText(QCoreApplication::translate("WriteScreener", "actionLowercase", nullptr));
+    actionactionBold->setText(QCoreApplication::translate("WriteScreener", "actionBold", nullptr));
+    actionactionItalic->setText(QCoreApplication::translate("WriteScreener", "actionItalic", nullptr));
+    actionColor->setText(QCoreApplication::translate("WriteScreener", "Color", nullptr));
+    actionAbout->setText(QCoreApplication::translate("WriteScreener", "About", nullptr));
+    labelTitle->setText(QCoreApplication::translate("WriteScreener", "<html><head/><body><p><span style=\" font-size:14pt; font-weight:600; color:#ffffff;\">Title</span></p></body></html>", nullptr));
+    labelWriter->setText(QCoreApplication::translate("WriteScreener", "<html><head/><body><p><span style=\" font-size:14pt; font-weight:600; color:#ffffff;\">Writer</span></p></body></html>", nullptr));
+    labelDirector->setText(QCoreApplication::translate("WriteScreener", "<html><head/><body><p><span style=\" font-size:14pt; font-weight:600; color:#ffffff;\">Director</span></p></body></html>", nullptr));
+    labelProducer->setText(QCoreApplication::translate("WriteScreener", "<html><head/><body><p><span style=\" font-size:14pt; font-weight:600; color:#ffffff;\">Producer</span></p></body></html>", nullptr));
+    tabWidget->setTabText(tabWidget->indexOf(tabProjectInfos), QString());
 
-    textEdit->setHtml(QCoreApplication::translate("MainWindow", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
+    textScriptEdit->setHtml(QCoreApplication::translate("WriteScreener", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
     "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
     "p, li { white-space: pre-wrap; }\n"
     "</style></head><body style=\" font-family:'Courier New'; font-size:12pt; font-weight:400; font-style:normal;\">\n"
     "<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'MS Shell Dlg 2'; font-size:7.8pt;\"><br /></p></body></html>", nullptr));
 
-    tabWidget->setTabText(tabWidget->indexOf(tab), QString());
-    tabWidget->setTabText(tabWidget->indexOf(tab_3), QString());
-    menuFile->setTitle(QCoreApplication::translate("MainWindow", "File", nullptr));
-    menuEdit->setTitle(QCoreApplication::translate("MainWindow", "Edit", nullptr));
-    menuHelp->setTitle(QCoreApplication::translate("MainWindow", "Help", nullptr));
-    toolBar->setWindowTitle(QCoreApplication::translate("MainWindow", "toolBar", nullptr));
+    tabWidget->setTabText(tabWidget->indexOf(tabScriptEdit), QString());
+    menuFile->setTitle(QCoreApplication::translate("WriteScreener", "File", nullptr));
+    menuEdit->setTitle(QCoreApplication::translate("WriteScreener", "Edit", nullptr));
+    menuHelp->setTitle(QCoreApplication::translate("WriteScreener", "Help", nullptr));
+    toolBar->setWindowTitle(QCoreApplication::translate("WriteScreener", "toolBar", nullptr));
 }
 
 void MainWindow2::on_actionNew_triggered()
 {
     currentFile.clear();
-    textEdit->setText(QString());
+    textScriptEdit->setText(QString());
 }
 
 void MainWindow2::on_actionOpen_triggered()
@@ -505,13 +515,13 @@ void MainWindow2::on_actionOpen_triggered()
     setWindowTitle(filename);
     QTextStream in(&file);
     QString text = in.readAll();
-    textEdit->setText(text);
+    textScriptEdit->setText(text);
     file.close();
 }
 
 void MainWindow2::on_actionSave_triggered()
 {
-    QString filename = QFileDialog::getSaveFileName(this, "Save");
+    QString filename = QFileDialog::getSaveFileName(this, "Save Script", "", "Text File (*.txt)");
     QFile file(filename);
     if (!file.open(QFile::WriteOnly | QFile::Text)) {
         QMessageBox::warning(this, "Warning", "Cannot save file : " + file.errorString());
@@ -520,7 +530,7 @@ void MainWindow2::on_actionSave_triggered()
     currentFile = filename;
     setWindowTitle(filename);
     QTextStream out(&file);
-    QString text = textEdit->toPlainText();
+    QString text = textScriptEdit->toPlainText();
     out << text;
     file.close();
 }
@@ -535,7 +545,7 @@ void MainWindow2::on_actionPrint_triggered()
         return;
     }
 
-    textEdit->print(&printer);
+    textScriptEdit->print(&printer);
 }
 
 void MainWindow2::on_actionExit_triggered()
@@ -545,27 +555,27 @@ void MainWindow2::on_actionExit_triggered()
 
 void MainWindow2::on_actionCopy_triggered()
 {
-    textEdit->copy();
+    textScriptEdit->copy();
 }
 
 void MainWindow2::on_actionPaste_triggered()
 {
-    textEdit->paste();
+    textScriptEdit->paste();
 }
 
 void MainWindow2::on_actionCut_triggered()
 {
-    textEdit->cut();
+    textScriptEdit->cut();
 }
 
 void MainWindow2::on_actionUndo_triggered()
 {
-    textEdit->undo();
+    textScriptEdit->undo();
 }
 
 void MainWindow2::on_actionRedo_triggered()
 {
-    textEdit->redo();
+    textScriptEdit->redo();
 }
 
 void MainWindow2::on_actionPolice_triggered()
@@ -574,7 +584,7 @@ void MainWindow2::on_actionPolice_triggered()
     QFont font = QFontDialog::getFont(&selected, this);
     if (selected) {
         // A font is selected
-        QTextCursor cursor = textEdit->textCursor();
+        QTextCursor cursor = textScriptEdit->textCursor();
         QTextCharFormat formatChar = cursor.charFormat();
         formatChar.setFont(font);
         cursor.setCharFormat(formatChar);
@@ -583,27 +593,27 @@ void MainWindow2::on_actionPolice_triggered()
 
 void MainWindow2::on_actionactionAlignCenter_triggered()
 {
-    textEdit->setAlignment(Qt::AlignCenter);
+    textScriptEdit->setAlignment(Qt::AlignCenter);
 }
 
 void MainWindow2::on_actionactionAlignLeft_triggered()
 {
-    textEdit->setAlignment(Qt::AlignLeft);
+    textScriptEdit->setAlignment(Qt::AlignLeft);
 }
 
 void MainWindow2::on_actionactionAlignRight_triggered()
 {
-    textEdit->setAlignment(Qt::AlignRight);
+    textScriptEdit->setAlignment(Qt::AlignRight);
 }
 
 void MainWindow2::on_actionactionAlignJustify_triggered()
 {
-    textEdit->setAlignment(Qt::AlignJustify);
+    textScriptEdit->setAlignment(Qt::AlignJustify);
 }
 
 void MainWindow2::on_actionactionUppercase_triggered()
 {
-    QTextCursor cursor = textEdit->textCursor();
+    QTextCursor cursor = textScriptEdit->textCursor();
     if (cursor.selectionEnd() - cursor.selectionStart() == 0) {
         // Passer toute la ligne en majuscule
         cursor.select(QTextCursor::LineUnderCursor);
@@ -613,7 +623,7 @@ void MainWindow2::on_actionactionUppercase_triggered()
 
 void MainWindow2::on_actionactionLowercase_triggered()
 {
-    QTextCursor cursor = textEdit->textCursor();
+    QTextCursor cursor = textScriptEdit->textCursor();
     if (cursor.selectionEnd() - cursor.selectionStart() == 0) {
         // Passer toute la ligne en majuscule
         cursor.select(QTextCursor::LineUnderCursor);
@@ -621,10 +631,26 @@ void MainWindow2::on_actionactionLowercase_triggered()
     cursor.insertText(cursor.selectedText().toLower());
 }
 
+void MainWindow2::on_actionactionBold_triggered()
+{
+    QTextCursor cursor = textScriptEdit->textCursor();
+    QTextCharFormat formatChar = cursor.charFormat();
+    formatChar.setFontWeight(QFont::Bold);
+    cursor.setCharFormat(formatChar);
+}
+
+void MainWindow2::on_actionactionItalic_triggered()
+{
+    QTextCursor cursor = textScriptEdit->textCursor();
+    QTextCharFormat formatChar = cursor.charFormat();
+    formatChar.setFontItalic(1);
+    cursor.setCharFormat(formatChar);
+}
+
 void MainWindow2::on_actionColor_triggered()
 {
     QColor color = QColorDialog::getColor(Qt::black, this);
-    textEdit->setTextColor(color);
+    textScriptEdit->setTextColor(color);
 }
 
 void MainWindow2::on_actionAbout_triggered()

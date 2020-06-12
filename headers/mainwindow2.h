@@ -58,34 +58,35 @@ public:
     QAction *actionactionAlignJustify;
     QAction *actionactionUppercase;
     QAction *actionactionLowercase;
+    QAction *actionactionBold;
+    QAction *actionactionItalic;
     QAction *actionColor;
     QAction *actionAbout;
     QWidget *centralwidget;
-    QVBoxLayout *verticalLayout_3;
+    QVBoxLayout *vLayoutCentralWidget;
     QTabWidget *tabWidget;
-    QWidget *tab_2;
-    QHBoxLayout *horizontalLayout_4;
-    QHBoxLayout *horizontalLayout_3;
-    QSpacerItem *horizontalSpacer;
-    QVBoxLayout *verticalLayout_2;
-    QLabel *label;
-    QLineEdit *lineEdit_3;
-    QSpacerItem *verticalSpacer_4;
-    QLabel *label_2;
-    QLineEdit *lineEdit_2;
-    QSpacerItem *verticalSpacer_3;
-    QLabel *label_3;
-    QLineEdit *lineEdit;
-    QSpacerItem *verticalSpacer;
-    QLabel *label_4;
-    QLineEdit *lineEdit_4;
-    QSpacerItem *verticalSpacer_2;
-    QSpacerItem *horizontalSpacer_2;
-    QWidget *tab;
-    QHBoxLayout *horizontalLayout;
-    QVBoxLayout *verticalLayout;
-    QTextEdit *textEdit;
-    QWidget *tab_3;
+    QWidget *tabProjectInfos;
+    QHBoxLayout *hLayoutProjectInfos;
+    QHBoxLayout *hLayoutListInfos;
+    QSpacerItem *horizontalSpacerLeft;
+    QVBoxLayout *vLayoutListInfos;
+    QLabel *labelTitle;
+    QLineEdit *lineEditTitle;
+    QSpacerItem *verticalSpacerTitle;
+    QLabel *labelWriter;
+    QLineEdit *lineEditWriter;
+    QSpacerItem *verticalSpacerWriter;
+    QLabel *labelDirector;
+    QLineEdit *lineEditDirector;
+    QSpacerItem *verticalSpacerDirector;
+    QLabel *labelProducer;
+    QLineEdit *lineEditProducer;
+    QSpacerItem *verticalSpacerEndListInfos;
+    QSpacerItem *horizontalSpacerRight;
+    QWidget *tabScriptEdit;
+    QHBoxLayout *hLayoutScriptEdit;
+    QVBoxLayout *vLayoutScriptEdit;
+    QTextEdit *textScriptEdit;
     QMenuBar *menubar;
     QMenu *menuFile;
     QMenu *menuEdit;
@@ -131,6 +132,10 @@ private slots:
     void on_actionactionUppercase_triggered();
 
     void on_actionactionLowercase_triggered();
+
+    void on_actionactionBold_triggered();
+
+    void on_actionactionItalic_triggered();
 
     void on_actionColor_triggered();
 

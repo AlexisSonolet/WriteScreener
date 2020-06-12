@@ -1,8 +1,8 @@
 # 📝🎬 WriteScreener
 
-[![Release](https://img.shields.io/github/v/release/AlexisSonolet/WriteScreener?include_prereleases)](https://shields.io/) &ensp; <!--- [![Downloads](https://img.shields.io/github/downloads/AlexisSonolet/WriteScreener/total)](https://shields.io/) &nbsp; -->
-[![Downloads](https://img.shields.io/github/issues-raw/AlexisSonolet/WriteScreener)](https://shields.io/)
-[![Downloads](https://img.shields.io/github/issues-closed-raw/AlexisSonolet/WriteScreener)](https://shields.io/)
+[![Release](https://img.shields.io/github/v/release/AlexisSonolet/WriteScreener?include_prereleases)](https://github.com/AlexisSonolet/WriteScreener/releases/tag/0.1) &ensp; <!--- [![Downloads](https://img.shields.io/github/downloads/AlexisSonolet/WriteScreener/total)](https://shields.io/) &nbsp; -->
+[![Downloads](https://img.shields.io/github/issues-raw/AlexisSonolet/WriteScreener)](https://github.com/AlexisSonolet/WriteScreener/issues)
+[![Downloads](https://img.shields.io/github/issues-closed-raw/AlexisSonolet/WriteScreener)](https://github.com/AlexisSonolet/WriteScreener/issues?q=is%3Aissue+is%3Aclosed)
 
 
 [![Platform](https://img.shields.io/badge/platform-Windows_||_Linux-blue.svg)](https://shields.io/) [![Linux Build Status](https://travis-ci.com/AlexisSonolet/WriteScreener.svg?branch=master)](https://travis-ci.com/AlexisSonolet/WriteScreener) &ensp;
@@ -34,8 +34,8 @@ https://wiki.qt.io/Deploy_an_Application_on_Windows/fr
     - lancer QtCreator et compiler le programme
     - créer un dossier "Application" et mettre dedans :
         - L'application `WriteScreener.exe`
-        - Tous les fichiers `.dll` de `Qt\5.2.1\mingw48_32\bin\`
-        - Tous les répertoires de `Qt\5.2.1\mingw48_32\plugins\`
+        - Tous les fichiers `.dll` de `Qt\5.*\mingw*\bin\`
+        - Tous les répertoires de `Qt\5.*\mingw*\plugins\`
         
         Le dossier devrait être très lourd, il est possible de l'alléger en supprimant les fichiers inutiles. Pour savoir quels fichiers sont inutiles, c'est très simple : ouvrir l'application ete supprimer les fichiers jusqu'à ce que l'application plante
 - Pour compiler le programme sans QtCreator :
